@@ -34,7 +34,7 @@ jobs:
         run: az group list --output table
         
       - name: get secret from KeyVault
-        run: |
+        run: >
           az keyvault secret show 
             --vault-name handsonkv9837423 
             --name StorageAccountConnectionString 
