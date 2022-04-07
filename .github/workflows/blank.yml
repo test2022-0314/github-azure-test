@@ -36,6 +36,6 @@ jobs:
       - name: get secret from KeyVault
         run: >
           az keyvault secret show 
-            --vault-name handsonkv9837423 
-            --name StorageAccountConnectionString 
-            --query value --output tsv
+          --vault-name handsonkv9837423 
+          --name StorageAccountConnectionString 
+          --query value --output tsv
